@@ -20,7 +20,7 @@ The processor currently supports a subset of the RV32I ISA:
 The design was verified in Vivado. The waveform below demonstrates the execution of a test program that performs data processing and memory operations.
 *(Note: Green blocks indicate valid data propagation through the Datapath).*
 
-![Simulation Waveform](simulation_waveform.png)
+![Simulation Waveform](waveform_riscv.png)
 
 ## File Structure
 - `riscv.v` - Top-level module integrating Control Unit and Datapath.
