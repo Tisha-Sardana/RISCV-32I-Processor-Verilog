@@ -15,10 +15,8 @@ module riscv(
                 ImmSrc, ALUControl, Zero, PC, Instr,
                 ALUResult, WriteData, ReadData);
                 
-    // Connect DataAdr to ALUResult (The address comes from the ALU)
     assign DataAdr = ALUResult;
 
-    // Memories (internal for testing)
     imem imem(PC[7:2], Instr);
     dmem dmem(clk, MemWrite, DataAdr, WriteData, ReadData);
 endmodule
