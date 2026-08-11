@@ -1,23 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 16.01.2026 11:37:00
-// Design Name: 
-// Module Name: controller
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
 module controller(
     input  [6:0] op,
@@ -29,7 +10,7 @@ module controller(
     output       ALUSrc,
     output [1:0] ResultSrc,
     output       PCSrc,
-    output [1:0] ImmSrc,    // Added this output
+    output [1:0] ImmSrc,    
     output [2:0] ALUControl
 );
     wire [1:0] ALUOp;
